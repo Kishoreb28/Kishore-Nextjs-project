@@ -1,0 +1,77 @@
+.teamMemberCard {
+    margin: 0 1rem 3rem;
+    max-width: 175px;
+    text-align: center;
+    overflow: visible;
+}
+
+.imageDiv {
+    position: relative;
+}
+
+.imageDiv:hover .overlay {
+    opacity: 1;
+}
+
+.profilePic {
+    width: 175px;
+    z-index: 1;
+}
+
+.overlay {
+    backdrop-filter: blur(0.5rem);
+    border-radius: 200px;
+    height: 190px;
+    width: 195px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: all 0.25s ease;
+}
+
+.linkedInIcon {
+    color: var(--white);
+}
+
+.memberName {
+    color: #263238;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.position {
+    color: #535050;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 1080px) {
+    .teamMemberCard {
+        margin: 0 0.25rem 2rem;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .teamMemberCard {
+        max-width: 210px;
+    }
+    .profilePic {
+        width: 200px;
+        z-index: 1;
+    }
+    .overlay {
+        backdrop-filter: blur(0.5rem);
+        border-radius: 200px;
+        height: 210px;
+        width: 210px;
+    }
+}

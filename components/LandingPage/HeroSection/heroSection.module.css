@@ -1,0 +1,228 @@
+.fullWidth{
+    width: 100%;
+    transition:all  1s ease-in-out;
+}
+.fullWidthActive{
+    width: 100%;
+    background: linear-gradient(88.85deg, rgba(255, 212, 194, 0.81) 3.9%, rgba(255, 255, 255, 0) 103.46%);
+    transition:all  1s ease-in-out;
+}
+.heroSection{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+}
+.left{
+    width:45%;
+    height: 360px;
+}
+.right{
+    width:50%;
+    position: relative;
+    height: 100%;
+}
+.btnGroup{
+    width: 200px;
+    height: 70px;
+    background: #F3F3F3;
+    border-radius: 20px;
+    position: relative;
+}
+.mentorBtnGroup{
+    border: 2px solid var(--primary2);
+}
+.toggleBtn{
+    width: 90px;
+    height: 50px;
+    margin-left: 5px;
+    border-radius: 16px;
+    font-weight: 500;
+    font-size: 22px;
+    color: black;
+    text-transform: capitalize;
+}
+.toggleBtn:hover{
+    background: transparent;
+}
+.activeBox{
+    height: 75%;
+    width: 90px;
+    transform: translateY(-50%);
+    border-radius: 15px;
+    background: white;
+}
+.menteeActiveBtn{
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transition: all 0.3s ease;
+}
+.mentorActiveBtn{
+    position: absolute;
+    left: 52%;
+    top: 50%;
+    transition: all 0.3s ease;
+}
+.toggleActiveBtn{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
+    color: var(--primary2);
+}
+.toggleActiveBtn:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
+    color: var(--primary2);
+}
+.heading{
+    font-weight: 500;
+    font-size: 52px;
+}
+.text{
+    font-weight: 400;
+    font-size: 24px;
+    color: #57656E;
+}
+.submitBtn{
+    width: 250px;
+    height: 60px;
+    border-radius: 21px;
+    background: var(--primary);
+    font-family: 'Roboto';
+    font-size: 22px;
+    text-transform: none;
+}
+.banner{
+    float: right;
+    width: 65%;
+}
+.compBanner{
+    position: absolute;
+    right:-12%;
+    top: -2%;
+    width: 105%;
+
+}
+@media Screen and (max-width:1200px){
+    .btnGroup{
+        height: 55px;
+    }
+    .activeBox{
+        width: 90px;
+    }
+    .toggleBtn{
+        width: 80px;
+        height: 40px;
+        border-radius: 16px;
+        font-size: 20px;
+    }
+    .heading{
+        font-size: 42px;
+    }
+    .text{
+        font-size: 22px;
+    }
+    .submitBtn{
+        width: 230px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+@media Screen and (max-width:900px){
+    
+    .activeBox{
+        width: 90px;
+    }
+    .toggleBtn{
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+    }
+    .heading{
+        font-size: 34px;
+    }
+    .text{
+        font-size: 19px;
+    }
+    .submitBtn{
+        width: 210px;
+        height: 45px;
+        font-size: 18px;
+    }
+    .banner{
+        width: 75%;
+    }
+    .compBanner{
+        width: 115%;
+        right: -15%;
+    
+    }
+}
+@media Screen and (max-width:600px){
+    .heroSection{
+        flex-direction: column;
+        width: 80vw;
+    }
+    .left{
+        width:100%;
+        min-height: 0px;
+        height: 360px;
+    }
+    .right{
+        width:auto;
+    }
+    .btnGroup{
+        width: 200px;
+        height: 55px;
+    }
+    .toggleBtn{
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+    }
+    .heading{
+        font-size: 38px;
+    }
+    .text{
+        font-size: 20px;
+    }
+    .submitBtn{
+        width:100%;
+        height: 60px;
+        font-size: 22px;
+    }
+    .banner{
+        width: 62%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .compBanner{
+        width: 100%;
+        right: auto;
+        left: -2%;
+        top: -5%;
+    
+    }
+
+}
+@media Screen and (max-width:700px){
+    .heroSection{
+        width: 90vw;
+    }
+    .heading{
+        font-size: 34px;
+    }
+    .text{
+        font-size: 18px;
+    }
+}
+@media Screen and (max-width:400px){
+   
+    .heading{
+        font-size: 30px;
+    }
+    .text{
+        font-size: 16px;
+    }
+}

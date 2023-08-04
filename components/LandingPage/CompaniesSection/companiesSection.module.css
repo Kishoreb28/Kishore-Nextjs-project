@@ -1,0 +1,41 @@
+.companies{
+    background: white;
+    border-radius: 31px;
+    border: 1px solid var(--primary2);
+    padding: 20px;
+    min-height: 500px;
+    margin-top: 80px;
+    user-select: none;
+
+
+}
+.smallImg{
+    display: none;
+    pointer-events: none;
+}
+.bigImg{
+    width: 90%;
+    pointer-events: none;
+}
+@media screen and (max-width:1200px){
+    .companies{
+       
+        min-height: 350px;
+    }
+}
+@media screen and (max-width:900px){
+    .smallImg{
+        width: 90%;
+        display: block;
+    }
+    .bigImg{
+        display: none;
+    }
+}
+@media screen and (max-width:600px){
+    .companies{
+        width: 90%;
+        margin-top: 40px;
+
+    }
+}

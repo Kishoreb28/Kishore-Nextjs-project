@@ -1,0 +1,62 @@
+.theFooter {
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: 2rem 1rem;
+    margin-top: 60px;
+}
+.footerTxt{
+    color: white;
+}
+.content {
+    margin: auto;
+    max-width: 1320px;
+}
+.footerBtn{
+    color: white;
+    text-transform: none;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'DM Sans',sans-serif;
+}
+
+.socialBtn {
+    background-color: rgba(255, 255, 255, 0.05);
+    color:white;
+}
+.policyText{
+    color: #837F7F;
+    min-width: 42%;
+}
+.policyText2{
+    color: #837F7F;
+    font-size: 14px;
+    text-decoration: underline;
+}
+@media screen and (max-width:900px) {
+    .footerBtn{
+        font-size: 14px;
+    }
+    .policyText{
+        
+    }
+    .policyText2{
+        color: #837F7F;
+        font-size: 14px;
+        text-decoration: underline;
+    }
+}
+@media screen and (max-width:600px) {
+    .footerTxt{
+        display: none;
+    }
+    
+    .policyText{
+        font-size: 13px;
+        text-align: center;
+    }
+    .policyText2{
+        font-size: 12px;
+        text-align: center;
+
+    }
+}

@@ -1,0 +1,136 @@
+.mentorsSection{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.exploreAllBtn{
+    background: var(--primary);
+    text-transform: capitalize;
+    width: 220px;
+    height: auto;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 21px;
+}
+
+/* slider */
+.embla {
+    position: relative;
+    max-width: 1060px;
+  }
+  
+  .embla__viewport {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .embla__viewport.is-draggable {
+    cursor: move;
+    cursor: grab;
+  }
+  
+  .embla__viewport.is-dragging {
+    cursor: grabbing;
+  }
+  
+  .embla__container {
+    display: flex;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    margin-left: -10px;
+  }
+  
+  .embla__slide {
+    position: relative;
+    padding-left: 10px;
+  }
+  
+  .embla__slide__inner {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .embla__slide__img {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: none;
+    transform: translate(-50%, -50%);
+  }
+  
+  .embla__button {
+    outline: 0;
+    cursor: pointer;
+    background-color: transparent;
+    touch-action: manipulation;
+    position: absolute;
+    z-index: 1;
+    top: 45%;
+    transform: translateY(-50%);
+    border: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+  }
+  
+  .embla__button:disabled {
+    cursor: default;
+    opacity: 0.3;
+  }
+  
+ 
+  
+  .embla__button__prev {
+    left: -5%;
+  }
+  
+  .embla__button__next {
+    right: -5%;
+  }
+  
+  @media screen and (max-width:1100px) {
+    .embla {
+      max-width: 790px;
+    }
+  }
+  @media screen and (max-width:900px) {
+    .embla {
+      max-width: 730px;
+    }
+  }
+  @media screen and (max-width:800px) {
+    .embla {
+      max-width: 520px;
+    }
+    .embla__button__prev {
+      left: -10%;
+    }
+    
+    .embla__button__next {
+      right: -10%;
+    }
+    .mentorsSection{
+      margin-top: 20px;
+  }
+  
+  }
+  @media screen and (max-width:550px) {
+    .embla {
+      max-width: 100%;
+    }
+    .embla__button__prev {
+        display: none;
+    }
+    
+    .embla__button__next {
+        display: none; 
+   }
+  }

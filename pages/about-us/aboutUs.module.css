@@ -1,0 +1,61 @@
+.aboutUsPage {
+    background-color: var(--white);
+    width: 100%;
+}
+
+.header {
+    background-image: linear-gradient(to right, var(--primary1), var(--primary2));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.heading {
+    color: white;
+    font-family: 'DM Sans',sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}
+.heading1{
+    color:#504e4e ;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+}
+.paragraph{
+    background-image: linear-gradient(to right, var(--primary1), var(--primary2));
+    text-align: center;
+    width: 100%;
+    padding:  10px 10%;
+    color: white;
+    font-size: 20px;
+
+}
+.backBtn {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+.backBtn:hover {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1080px) {
+    .header {
+        flex-direction: column;
+        padding: 2rem 1rem 0;
+    }
+    .heading {
+        font-size: 2.5rem;
+    }
+    .heading1 {
+        font-size: 2.5rem;
+    }
+    .backBtn {
+        align-self: flex-start;
+    }
+}
